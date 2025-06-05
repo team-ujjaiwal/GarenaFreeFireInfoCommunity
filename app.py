@@ -141,8 +141,7 @@ async def GetAccountInformation(uid, unk, region, endpoint):
                 "CsRankingPoints": data.get("basicInfo", {}).get("csRankingPoints"),
                 "EquippedWeaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []),
                 "MaxRank": data.get("basicInfo", {}).get("maxRank"),
-                "CsMaxRank": data.get("basicInfo", {}).get("csMaxRank"),
-                "AccountPrefers": data.get("basicInfo", {}).get("accountPrefers", {})
+                "CsMaxRank": data.get("basicInfo", {}).get("csMaxRank")
             },
             "AccountProfileInfo": {
                 "avatarId": data.get("profileInfo", {}).get("avatarId"),
@@ -181,8 +180,7 @@ async def GetAccountInformation(uid, unk, region, endpoint):
                 "csRankingPoints": data.get("basicInfo", {}).get("csRankingPoints"),
                 "weaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []),
                 "maxRank": data.get("basicInfo", {}).get("maxRank"),
-                "csMaxRank": data.get("basicInfo", {}).get("csMaxRank"),
-                "accountPrefers": data.get("basicInfo", {}).get("accountPrefers", {})
+                "csMaxRank": data.get("basicInfo", {}).get("csMaxRank")
             },
             "clanBasicInfo": {
                 "clanId": data.get("clanBasicInfo", {}).get("clanId"),
