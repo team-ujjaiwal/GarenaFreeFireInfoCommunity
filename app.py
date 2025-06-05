@@ -139,10 +139,10 @@ async def GetAccountInformation(uid, unk, region, endpoint):
                 "AccountLastLoginAt": data.get("basicInfo", {}).get("lastLoginAt"),
                 "CsRank": data.get("basicInfo", {}).get("csRank"),
                 "CsRankingPoints": data.get("basicInfo", {}).get("csRankingPoints"),
-                "MaxRank": data.get("basicInfo", {}).get("maxRank"),
                 "CsMaxRank": data.get("basicInfo", {}).get("csMaxRank"), 
-                "EquippedWeaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []), 
-                "title": data.get("basicInfo", {}).get("title")
+                "MaxRank": data.get("basicInfo", {}).get("maxRank"),
+                "title": data.get("basicInfo", {}).get("title"), 
+                "EquippedWeaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", [])
             },
             "AccountProfileInfo": {
                 "avatarId": data.get("profileInfo", {}).get("avatarId"),
@@ -178,10 +178,10 @@ async def GetAccountInformation(uid, unk, region, endpoint):
                 "lastLoginAt": data.get("basicInfo", {}).get("lastLoginAt"),
                 "csRank": data.get("basicInfo", {}).get("csRank"),
                 "csRankingPoints": data.get("basicInfo", {}).get("csRankingPoints"),
-                "maxRank": data.get("basicInfo", {}).get("maxRank"),
                 "csMaxRank": data.get("basicInfo", {}).get("csMaxRank"), 
-                "weaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []), 
-                "title": data.get("basicInfo", {}).get("title")
+                "maxRank": data.get("basicInfo", {}).get("maxRank"),
+                "title": data.get("basicInfo", {}).get("title"), 
+                "weaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", [])
             },
             "clanBasicInfo": {
                 "clanId": data.get("clanBasicInfo", {}).get("clanId"),
