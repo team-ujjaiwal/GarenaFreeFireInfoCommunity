@@ -139,9 +139,10 @@ async def GetAccountInformation(uid, unk, region, endpoint):
                 "AccountLastLoginAt": data.get("basicInfo", {}).get("lastLoginAt"),
                 "CsRank": data.get("basicInfo", {}).get("csRank"),
                 "CsRankingPoints": data.get("basicInfo", {}).get("csRankingPoints"),
-                "EquippedWeaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []),
                 "MaxRank": data.get("basicInfo", {}).get("maxRank"),
-                "CsMaxRank": data.get("basicInfo", {}).get("csMaxRank")
+                "CsMaxRank": data.get("basicInfo", {}).get("csMaxRank"), 
+                "EquippedWeaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []), 
+                "title": data.get("basicInfo", {}).get("title")
             },
             "AccountProfileInfo": {
                 "avatarId": data.get("profileInfo", {}).get("avatarId"),
@@ -153,7 +154,6 @@ async def GetAccountInformation(uid, unk, region, endpoint):
                 "clothesTailorEffects": data.get("profileInfo", {}).get("clothesTailorEffects", [])
             },
             "createAt": data.get("basicInfo", {}).get("createAt"),
-            "title": data.get("basicInfo", {}).get("title"),
             "releaseVersion": data.get("basicInfo", {}).get("releaseVersion"),
             "showBrRank": data.get("basicInfo", {}).get("showBrRank"),
             "showCsRank": data.get("basicInfo", {}).get("showCsRank"),
@@ -178,9 +178,10 @@ async def GetAccountInformation(uid, unk, region, endpoint):
                 "lastLoginAt": data.get("basicInfo", {}).get("lastLoginAt"),
                 "csRank": data.get("basicInfo", {}).get("csRank"),
                 "csRankingPoints": data.get("basicInfo", {}).get("csRankingPoints"),
-                "weaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []),
                 "maxRank": data.get("basicInfo", {}).get("maxRank"),
-                "csMaxRank": data.get("basicInfo", {}).get("csMaxRank")
+                "csMaxRank": data.get("basicInfo", {}).get("csMaxRank"), 
+                "weaponSkinShows": data.get("basicInfo", {}).get("weaponSkinShows", []), 
+                "title": data.get("basicInfo", {}).get("title")
             },
             "clanBasicInfo": {
                 "clanId": data.get("clanBasicInfo", {}).get("clanId"),
